@@ -5,7 +5,6 @@
 {{ super() }}
 <link rel="stylesheet"
       href="{{url_for('.static', filename='mystyle.css')}}">
-
 <link rel="icon"
       type="image/ico"
       href="static/favicon.ico">
@@ -14,9 +13,16 @@
 {% block content %}
 <div class="container">
   <nav class="navbar-light bg-light text-center">
-    <h1 class="blurb text-align-center">
+    <h1 class="blurb text-align-left">
       Channel Response Bot
     </h1>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+      </div>
+    </div>
   </nav>
 </div>
 
@@ -28,16 +34,16 @@
      <div class="col-sm">
         <div class="spacer">
         </div>
-        <div class="row align-items-center">
+        <span>
+          <h2>
+          Slack bot sends the same response to every channel.
+          Channel Response Bot doesn't.
+          </h2>
+        </span>
+        <span class="row align-items-center">
            <img class="center-block thumbnail" src="{{url_for('static', filename='img/crbot.png')}}">
-        </div>
+        </span>
      </div>
-     <h2 class="text-center blurb">
-       Slack bot sends the same response to every channel.
-     </h2>
-     <h2 class="text-center blurb">
-       Channel Response Bot doesn't.
-     </h2>
      <div class="col-sm">
      </div>
   </div>

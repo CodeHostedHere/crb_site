@@ -7,5 +7,8 @@
 .slogan-container {
     display: flex;
     align-items: center;
-    line-height: 2;
+}
+
+.slogan-text {
+    padding-top: 20px; 
 }

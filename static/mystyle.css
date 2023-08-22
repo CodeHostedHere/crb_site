@@ -10,10 +10,6 @@
 }
 
 .slogan-text {
-    margin-top: 0; /* Reset the default margin */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%; /* Make the text container fill the height */
+    margin-top: 100; /* Reset the default margin */
+
 }

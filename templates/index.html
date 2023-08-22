@@ -33,26 +33,20 @@
         </ul>
     </div>
   </nav>
-
-
-  <div class="container">
+  
+  <div class="container py-5">
     <div class="row">
-      <div class="col-sm">
-      </div>
-      <div class="col-sm">
-          <div class="spacer">
-          </div>
-          <span>
-            <h2>
-            Slaaaack
-            </h2>
-          </span>
-          <span class="row align-items-center">
-            <img class="center-block thumbnail" src="{{url_for('static', filename='img/crbot.png')}}">
-          </span>
-      </div>
-      <div class="col-sm">
-      </div>
+        <div class="col-lg-6">
+            <div class="slogan-container">
+                <h1>Slackbot uses the same response in every channel</h1>
+                <p>Channel Response Bot doesn't.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="logo-container">
+                <img src="{{url_for('static', filename='img/crbot.png')}}" alt="Logo" class="img-fluid">
+            </div>
+        </div>
     </div>
   </div>
 

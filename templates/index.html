@@ -1,0 +1,51 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %} Channel Response Bot {% endblock %}
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='mystyle.css')}}">
+
+<link rel="icon"
+      type="image/ico"
+      href="static/favicon.ico">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <nav class="navbar-light bg-light text-center">
+    <h1 class="blurb text-align-center">
+      Channel Response Bot
+    </h1>
+  </nav>
+</div>
+
+
+<div class="container">
+  <div class="row">
+     <div class="col-sm">
+     </div>
+     <div class="col-sm">
+        <div class="spacer">
+        </div>
+        <div class="row align-items-center">
+           <img class="center-block thumbnail" src="{{url_for('static', filename='img/crbot.png')}}">
+        </div>
+     </div>
+     <h2 class="text-center blurb">
+       Slack bot sends the same response to every channel.
+     </h2>
+     <h2 class="text-center blurb">
+       Channel Response Bot doesn't.
+     </h2>
+     <div class="col-sm">
+     </div>
+  </div>
+</div>
+
+<div class="container blurb footer text-center">
+    <p>GRBLDeveloped@gmail.com</p>
+</div>
+
+
+{% endblock %}

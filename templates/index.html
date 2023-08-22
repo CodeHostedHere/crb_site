@@ -10,48 +10,59 @@
 {% endblock %}
 
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-  <a class="navbar-brand" href="#">Channel Response Bot</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-          <!-- Nav items here -->
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <a class="navbar-brand" href="#">Channel Response Bot</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+          <div class="spacer">
+          </div>
+          <span>
+            <h2>
+            Slaaaack
+            </h2>
+          </span>
+          <span class="row align-items-center">
+            <img class="center-block thumbnail" src="{{url_for('static', filename='img/crbot.png')}}">
+          </span>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
   </div>
-</nav>
 
 
-<div class="container">
-  <div class="row">
-     <div class="col-sm">
-     </div>
-     <div class="col-sm">
-        <div class="spacer">
-        </div>
-        <span>
-          <h2>
-          Slaaaack
-          </h2>
-        </span>
-        <span class="row align-items-center">
-           <img class="center-block thumbnail" src="{{url_for('static', filename='img/crbot.png')}}">
-        </span>
-     </div>
-     <div class="col-sm">
-     </div>
+
+
+
+  <div class="container blurb footer text-center">
+      <p>GRBLDeveloped@gmail.com</p>
   </div>
-</div>
-
-
-
-
-
-<div class="container blurb footer text-center">
-    <p>GRBLDeveloped@gmail.com</p>
-</div>
 
 
 {% endblock %}

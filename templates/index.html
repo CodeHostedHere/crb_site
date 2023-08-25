@@ -166,18 +166,20 @@
             <div class="content">
               <h3>The Docs <br/>
                 <strong>Add Channel Response Bot to your workspace AND your channel before starting!</strong></br></br></h3>
-              <h5>
+              <p>
                 Let's run through a few examples of how to set up different responses in your Slack channels.
-              </h5>
+              </p>
 
-              <h4>Contains: Replying when a word or phrase is present</h4>
+              <h4>Contains</h4>
+              <h5>Replying when a word or phrase is present</h5>
               <img src="{{url_for('static', filename='img/contains_input.png')}}" class="img-fluid animated centered-image" alt="crb-contains slash command input">
-              <h5>Go to the channel you want to set up replies for and begin your command with "/crb-contains". Next add what phrase or word you want to trigger on. Finally, add the "--reply" flag and then write your response afterwards. See the results below</h5>
+              <p>Go to the channel you want to set up replies for and begin your command with "/crb-contains". Next add what phrase or word you want to trigger on. Finally, add the "--reply" flag and then write your response afterwards. See the results below</p>
               <img src="{{url_for('static', filename='img/contains_output.png')}}" class="img-fluid animated centered-image" alt="crb-contains slash command output">
-              
-              <h4>Missing: Replying when a word or phrase is <strong>not</strong> present</h4>
+              <br/> <br/>
+              <h4>Missing</h4>
+              <h5>Replying when a word or phrase is <strong>not</strong> present</h5>
               <img src="{{url_for('static', filename='img/missing_input.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command input">
-              <h5>Go to the channel you want to set up replies for and begin your command with "/crb-missing". Next add the phrase or word you need to be in every message sent to a channel. Finally, add the "--reply" flag and then write your response afterwards. See the results below</h5>
+              <p>Go to the channel you want to set up replies for and begin your command with "/crb-missing". Next add the phrase or word you need to be in every message sent to a channel. Finally, add the "--reply" flag and then write your response afterwards. See the results below</p>
               <img src="{{url_for('static', filename='img/missing_output.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command output">
 
             </div>

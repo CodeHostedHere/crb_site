@@ -173,12 +173,34 @@
               <p>Go to the channel you want to set up replies for and begin your command with "/crb-contains". Next add what phrase or word you want to trigger on. Finally, add the "--reply" flag and then write your response afterwards. See the results below</p>
               <img src="{{url_for('static', filename='img/contains_output.png')}}" class="img-fluid animated centered-image" alt="crb-contains slash command output">
               <br/><br/><br/> 
+              
               <h4>Missing</h4>
               <h5>Replying when a word or phrase is <strong>not</strong> present</h5>
               <img src="{{url_for('static', filename='img/missing_input.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command input"><br/>
               <p>Go to the channel you want to set up replies for and begin your command with "/crb-missing". Next add the phrase or word you need to be in every message sent to a channel. Finally, add the "--reply" flag and then write your response afterwards. See the results below</p>
               <img src="{{url_for('static', filename='img/missing_output.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command output">
               <br/><br/><br/> 
+              
+              <h4>Regex</h4>
+              <h5>Replying when a word or phrase matches your regex pattern</h5>
+              <img src="{{url_for('static', filename='img/regex_input.png')}}" class="img-fluid animated centered-image" alt="crb-regex slash command input"><br/>
+              <p>Go to the channel you want to set up replies for and begin your command with "/crb-regex". Next add the python compliant regex to match against messages in the channel. Finally, add the "--reply" flag and then write your response afterwards. See the results below</p>
+              <img src="{{url_for('static', filename='img/regex_output.png')}}" class="img-fluid animated centered-image" alt="crb-regex slash command output">
+              <br/><br/><br/> 
+              
+              <h4>Rules</h4>
+              <h5>Viewing what rules are configured for the channel you're in</h5>
+              <img src="{{url_for('static', filename='img/rules_input.png')}}" class="img-fluid animated centered-image" alt="crb-rules slash command input"><br/>
+              <p>Go to the channel you want to view the rules of and run the command "/crb-rules".</p>
+              <img src="{{url_for('static', filename='img/rules_output.png')}}" class="img-fluid animated centered-image" alt="crb-rules slash command output">
+              <br/><br/><br/> 
+              
+              <h4>Delete Rule</h4>
+              <h5>Deleting a rule that is no longer needed</h5>
+              <img src="{{url_for('static', filename='img/delete_input.png')}}" class="img-fluid animated centered-image" alt="crb-delete slash command input"><br/>
+              <p>Get the ID of the rule you want to delete by running "/crb-rules" and then run the command "/crb-delete" followed by the rule ID.</p>
+              <img src="{{url_for('static', filename='img/delete_output.png')}}" class="img-fluid animated centered-image" alt="crb-delete slash command output">
+              <br/><br/><br/>
             </div>
 
           </div>

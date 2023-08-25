@@ -146,6 +146,15 @@
       </div>
     </section><!-- End About Us Section -->
 
+
+  <style>
+      .centered-image {
+          display: block;
+          margin: 0 auto;
+      }
+  </style>
+
+
     <!-- ======= Docs Section ======= -->
     <section id="docs" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
@@ -162,14 +171,14 @@
               </h5>
 
               <h4>Contains: Replying when a word or phrase is present</h4>
-              <img src="{{url_for('static', filename='img/contains_input.png')}}" class="img-fluid animated" alt="crb-contains slash command input">
+              <img src="{{url_for('static', filename='img/contains_input.png')}}" class="img-fluid animated centered-image" alt="crb-contains slash command input">
               <h5>Go to the channel you want to set up replies for and begin your command with "/crb-contains". Next add what phrase or word you want to trigger on. Finally, add the "--reply" flag and then write your response afterwards. See the results below</h5>
-              <img src="{{url_for('static', filename='img/contains_output.png')}}" class="img-fluid animated" alt="crb-contains slash command output">
+              <img src="{{url_for('static', filename='img/contains_output.png')}}" class="img-fluid animated centered-image" alt="crb-contains slash command output">
               
               <h4>Missing: Replying when a word or phrase is <strong>not</strong> present</h4>
-              <img src="{{url_for('static', filename='img/missing_input.png')}}" class="img-fluid animated" alt="crb-missing slash command input">
+              <img src="{{url_for('static', filename='img/missing_input.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command input">
               <h5>Go to the channel you want to set up replies for and begin your command with "/crb-missing". Next add the phrase or word you need to be in every message sent to a channel. Finally, add the "--reply" flag and then write your response afterwards. See the results below</h5>
-              <img src="{{url_for('static', filename='img/missing_output.png')}}" class="img-fluid animated" alt="crb-missing slash command output">
+              <img src="{{url_for('static', filename='img/missing_output.png')}}" class="img-fluid animated centered-image" alt="crb-missing slash command output">
 
             </div>
 

@@ -8,10 +8,10 @@ def index():
 
 
 @app.route('/tos')
-def index():
+def tos():
     return render_template('tos.html')
 
 
 @app.route('/privacy')
-def index():
+def privacy():
     return render_template('privacy.html')
